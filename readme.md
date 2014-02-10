@@ -1,6 +1,6 @@
 # Caliper
 
-Calipur is a combination of a few little scripts that I am using to detect your browser width and then trigger functions based on that size.
+Caliper is a combination of a few little scripts that I am using to detect your browser width and then trigger functions based on that size.
 
 ## Why?
 
