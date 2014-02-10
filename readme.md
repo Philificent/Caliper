@@ -22,6 +22,7 @@ Grab the code from scripts.js and throw it in your code. Note that there is some
 - Firefox Nightly 30.0a1 (Windows)
 - Opera Browser for Android
 - Opera 15 (Windows)
+- Amazon Silk (Kindle Fire HDX 7" and 8.9")
 
 ## Future?
 
