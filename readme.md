@@ -1,7 +1,5 @@
 # Caliper
 
----
-
 Calipur is a combination of a few little scripts that I am using to detect your browser width and then trigger functions based on that size.
 
 ## Why?
@@ -14,16 +12,16 @@ Grab the code from scripts.js and throw it in your code. Note that there is some
 
 ## Tested Browsers
 
-IE8+
-Chrome 34.0.1832.1 canary SyzyASan
-Chrome 32.0.1700.107 m
-Chrome 32.0.1700.99 (Android 4.4.0)
-Chrome iOS (tested with iPad Air and iPhone 5, not sure what version #)
-Firefox 26+ (Windows)
-Firefox 27 (Android)
-Firefox Nightly 30.0a1 (Windows)
-Opera Browser for Android
-Opera 15 (Windows)
+- IE8+
+- Chrome 34.0.1832.1 canary SyzyASan
+- Chrome 32.0.1700.107 m
+- Chrome 32.0.1700.99 (Android 4.4.0)
+- Chrome iOS (tested with iPad Air and iPhone 5, not sure what version #)
+- Firefox 26+ (Windows)
+- Firefox 27 (Android)
+- Firefox Nightly 30.0a1 (Windows)
+- Opera Browser for Android
+- Opera 15 (Windows)
 
 ## Future?
 
