@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calipur - a JS conditional loader</title>
+		<!-- meta tags -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<meta name="description" content="">
+		<!-- Note: as of 2009, Google IGNORES meta name="keywords" and it may hurt your SEO score... -->
+		<!-- IE should be using edge -->
+		<meta http-equiv="X-UA-Compatible" content="IE-edge" />
+		<!-- CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="container" class="inner">
+			<div id="header" class="col span_12">
+				<div class="row">
+					<h1>Caliper</h1>
+				</div><!-- /.row -->
+			</div><!-- /#header -->
+			<div class="row clearfix">
+				<div id="main" class="col span_12">
+					<p>
+						Caliper will be a js plugin that allows you to load scripts based on screen size.
+						I still have to flesh out exactly how this thing works, but I have a rough idea.
+					</p>
+					To do:
+					<ul>
+						<li>Determine how subscripts will be called</li>
+						<li>Make it a plugin</li>
+					</ul>
+					<h2 id="output"></h2>
+				</div><!-- /.col .span_12 -->
+			</div><!-- /.row .clearfix -->
+			<div class="row clearfix">
+				<div id="footer" class="col span_12">
+					<p>a dutsonpa project</p>
+				</div><!-- /#footer -->
+			</div><!-- /.row .clearfix-->
+		</div><!-- /#container -->
+		<!-- JS -->
+		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="javascript/scripts.js"></script>
+		
+		<!--[if lt IE 8]>
+			<script src="javascript/respond.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$(".clearfix").each(function(){
+						$(this).append('<div style="height: 0;line-height: 0;margin: 0;padding: 0;clear: both;">&nbsp;</div>');
+					});
+				});
+			</script>
+		<![endif]-->
+	</body>
+</html>
