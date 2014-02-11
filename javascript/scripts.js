@@ -1,12 +1,8 @@
 //Globals
 var resize = null,
-	limitSm = 768,
+	limitSm = 640,
 	limitMd = 960,
-	limitLg = 1280,
-	loadedSm = false,
-	loadedMd = false,
-	loadedLg = false,
-	loadedXl = false;
+	limitLg = 1280;
 
 // Screen sized reloading:
 window.onload = logistics();
@@ -15,47 +11,34 @@ window.onresize = function(){
         clearTimeout(resize);
     }
     resize = setTimeout(function(){
-        //console.log("window resized");
         logistics();
     }, 750);
 }
 function logistics() {
 	var cw = document.documentElement.clientWidth;
-	if (cw < limitSm) {
-		if(!loadedSm) {
-			loadSm();
-			loadedSm = true;
-		}
+		if (cw < limitSm) {
+		loadSm(cw);
 	} else if (cw < limitMd) {
-		if(!loadedMd){
-			loadMd();
-			loadedMd = true;
-		}
+		loadMd(cw);
 	} else if (cw < limitLg) {
-		if(!loadedLg){
-			loadLg();
-			loadedLg = true;
-		}
+		loadLg(cw);
 	} else {
-		if(!loadedXl){
-			loadXl();
-			loadedXl = true;
-		}
+		loadXl(cw);
 	}
 }
-function loadSm() {
-	$("#output").text('Small screen, width reported as: '+document.documentElement.clientWidth+"px");
-	//console.log("load the scripts for small screens");
+function loadSm(cw) {
+	var output = document.getElementById('output');
+	output.innerHTML = "Small Screen, width reported as: "+cw+"px";
 }
-function loadMd() {
-	$("#output").text('Medium screen, width reported as: '+document.documentElement.clientWidth+"px");
-	//console.log("load the scripts for medium screens");
+function loadMd(cw) {
+	var output = document.getElementById('output');
+	output.innerHTML = "Medium Screen, width reported as: "+cw+"px";
 }
-function loadLg() {
-	$("#output").text('Large screen, width reported as: '+document.documentElement.clientWidth+"px");
-	//console.log("load the scripts for large screens");
+function loadLg(cw) {
+	var output = document.getElementById('output');
+	output.innerHTML = "Large Screen, width reported as: "+cw+"px";
 }
-function loadXl() {
-	$("#output").text('XLarge screen, width reported as: '+document.documentElement.clientWidth+"px");
-	//console.log("load scripts for extra large screens");
+function loadXl(cw) {
+	var output = document.getElementById('output');
+	output.innerHTML = "XLarge Screen, width reported as: "+cw+"px";
 }
